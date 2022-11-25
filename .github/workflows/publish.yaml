@@ -34,6 +34,6 @@ jobs:
         with:
           push: true
           context: .
-          build-args: VERSION=${{ github.ref }}
+          build-args: VERSION=${{ github.ref_name }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
